@@ -103,3 +103,23 @@ test “a” != “a”	0 se as cordas são diferentes
 test 1 –eq 1 –o 2 –eq 2	-o é OR: qualquer um pode ser o mesmo
 test 1 –eq 1 –a 2 –eq 2	-a é AND: ambos devem ser iguais
 
+#!/bin/bash
+
+for NAME in Sean Jon Isaac David; do
+  echo "Hello $NAME"
+done
+
+for S in *; do
+  echo "Doing something to $S"
+done
+
+
+#!/bin/bash
+
+i=0
+while [ $i -lt 10 ]; do
+  echo $i
+  i=$(( $i + 1))
+done
+echo “Done counting”
+
