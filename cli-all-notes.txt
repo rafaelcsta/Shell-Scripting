@@ -38,6 +38,8 @@ ls -d /etc/x* (lista todos os arquivos e diretórios que começam com x de /etc/
 ls -r *
 
 ls -lSRht --full-time *
+ls -l | more
+ls -l | less
 
 cp /etc/hosts .
 cp /etc/hosts ~
@@ -68,3 +70,19 @@ unzip School.zip
 unzip School.zip School/Math/numbers.txt
 
 tr 'az' 'A-Z' (converte letras minusculas em maiusculas)
+grep 'r..f' red.txt
+grep '[0-9]' profile.txt
+grep '[da]' profile.txt
+grep '[^ 0-9]' profile.txt (numero no começo da frase)
+grep 'r [oe] * d' red.txt
+grep 'e *' red.txt
+grep 'r $ 'alpha-first.txt (r no final)
+grep 're \ *' newhome.txt (Pattern *)
+grep -E 'grey | grey' spelling.txt
+grep -E 'sshd | root | operador' passwd
+egrep 'no (b | n)' passwd
+egrep -v "daemon|root" /etc/passwd (busque exceto)
+cat /etc/passwd | grep '[0-9]'
+grep -E '[0-9]{3}' /etc/passwd
+
+find /etc -name hosts (estudar o comando find)
