@@ -123,3 +123,79 @@ while [ $i -lt 10 ]; do
 done
 echo “Done counting”
 
+#Tutorial vi
+
+Ação
+
+:wq - salva e sai
+:w namefile - salva o arquivo com tal nome
+
+:w! namefile - Salva aquivo corrente no arquivo especificado
+
+:q - Sai do vi
+
+:q! - Sai sem salvar att realizadas
+
+i - insere texto antes do cursor
+a - insere texto depois do cursor
+r - insere texto no inicio de onde se encontra o cursor
+A - insere texto no final da linha...
+o - Adiciona linha abaixo da atual
+O - Adiciona linha acima da atual
+
+Movimentação
+
+ctrl+f - Move o cursor para a proxima tela
+ctrl+b - Move o cursor para tela anterior
+H - Move cursor a primeira linha da tela
+M - Move cursor para o meio da tela
+L - Move cursor para ultima linha da tela
+h - Move cursor um caractere a esquerda
+j - Move cursor a proxima linha
+k - Move cursor a linha anterior
+I - Move cursor ao inicio e insere
+w - Move cursor para inicio da prox palavra (ignora pontuação)
+W - para o inicio da prox palavra (sem ignorar a pontuação)
+b - Move o cursor para o inicio da palavra anterior (ignora pontuação)
+B - Move o cursor para o inicio da palavra anterior (sem ignorar pontuação)
+0 - Move cursor pro inicio da linha atual
+^ - Move cursor ao primeiro crtre não branco da linha atual
+$ - Move cursor para o final da linha atual
+nG - Move o cursor para linha n do arquivo.
+G - Move cursor pra linha final do arquivo
+
+Buscar
+
+/palavra - Busca pela palavra ou caractere em todo o texto
+
+?palavra - Move o cursor para a ocorrência anterior da palavra
+
+n - Repete o ultimo comando / ou ?
+N - Repete .... na direção reserva
+ctrl+g - Mostra o nome do arquivo, o numero da linha corrente e o total de linhas
+
+Substituição e Deleção
+
+x - Deleta o caractere que esta sob o cursor
+dw -  Deleta palavra, da posição atual do cursor até o final
+dd - Deleta linha atual
+D - Linha da posição atual do cursor até o final
+rx - Substitui o caractere sob o cursor ate o final
+Rx - Substitui a palavra sob o cursor pela palavra indicada em x
+u - Desfaz amodificação
+U - Desfaz todas as amodificações
+J - Une a linha corrente a proxima
+s:/Linux/Unix - substitui a primeira ocorrencia de "Linux" por "Unix"
+s:/Linux/Unix/g - Faz a substituição em todo o arquivo. 
+Tentar :%s/antiga/nova/g
+ 
+Testar com dois ponto iniciando o comando
+
+
+Mais dicas
+
+Man vi
+
+Ou 
+
+vimtutor
