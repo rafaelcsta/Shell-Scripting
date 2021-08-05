@@ -272,3 +272,43 @@ sleep 2 && echo "OI"
 /etc/sysconfig/networkarquivo
 
 ifconfig, ip, route -n , ip route, netstat -anp, nslookup, host, dig, ss, ping, hping3, whois, curl ifconfig.me, nc, ncat, socket.
+
+getent group root
+groupadd -g 1005 research
+groupadd development
+groupadd -r vendas
+getent group vendas
+
+O primeiro caractere do nome deve ser um sublinhado _caráter ou um alfabético minúsculo a- zpersonagem.
+São permitidos até 32 caracteres na maioria das distribuições Linux, mas usar mais de 16 pode ser problemático, pois algumas distribuições podem não aceitar mais de 16.
+Após o primeiro caractere, os caracteres restantes podem ser alfanuméricos, um traço -ou um sublinhado _.
+O último caractere não deve ser um -caractere de hífen .
+
+O groupmodcomando pode ser usado para alterar o nome de um grupo com a -nopção ou alterar o GID do grupo com a -gopção.
+
+groupmod -n clerks sales
+groupmod -g 10003 clerks
+find / -nogroup
+groupdel clerks
+useradd -D
+useradd -D -f 30
+grep -Ev '^ # | ^ $' /etc/login.defs
+useradd jane
+useradd -u 1000 jane
+useradd -g users jane
+useradd -G sales, research jane
+grep '/ home / jane' / etc / passwd
+useradd -m jane
+ls -ld /home/jane
+useradd -mb /test/jane
+useradd -mk /home/sysadmin/jane
+useradd -s /bin/bash/jane
+useradd -c 'Jane Doe' jane
+
+useradd -u 1009 -g users -G sales,research -m -c 'Jane Doe' jane
+grep jane /etc/passwd
+grep jane /etc/gshadow
+ls /var/spool/mail
+ls /home
+chage -M 60 jane
+grep jane /etc/shadow | cut -d: -f1,5
