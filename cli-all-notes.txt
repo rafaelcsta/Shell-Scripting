@@ -235,4 +235,11 @@ ZZ	Vai salvar e fechar. Observe que nenhum ponto- :e- vírgula é usado neste ca
 :e!	Descartar as alterações e recarregar o arquivo
 :w!	Grave como somente leitura, se possível.
 
-Testar com dois ponto iniciando o comando
+fdisk -l /dev/sda
+lscpu (ver hardware, arch, cpu...)
+lspci (ver perifericos)
+free -m (ver memoria)
+df
+du
+ls -lSRht --full-time *
+
