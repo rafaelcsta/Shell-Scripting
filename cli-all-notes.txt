@@ -86,5 +86,7 @@ cat /etc/passwd | grep '[0-9]'
 grep -E '[0-9]{3}' /etc/passwd
 
 find /etc -name hosts (estudar o comando find)
-read (recebe entrada do teclado durante em scripts)
+read (recebe entrada do teclado durante em scripts) 
+Ja "echo $?" retorna 0 se o ultimo comando for executado com sucesso, 1 se ocorrer algum erro de ausencia de args, ou 2 para erros legitimos.
+
 cat, echo, sort, grep, cut, head, tail, uniq, awk e sed sao comandos para exibir e ou filtrar saidas de texto
