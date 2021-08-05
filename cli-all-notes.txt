@@ -89,7 +89,7 @@ find /etc -name hosts (estudar o comando find)
 read (recebe entrada do teclado durante em scripts) 
 Ja "echo $?" retorna 0 se o ultimo comando for executado com sucesso, 1 se ocorrer algum erro de ausencia de args, ou 2 para erros legitimos. equivale a &&.
 
-cat, echo, sort, grep, cut, head, tail, uniq, awk e sed sao comandos para exibir e ou filtrar saidas de texto
+cat, echo, sort, grep, cut, head, tail, uniq, awk, seq e sed sao comandos para exibir e ou filtrar saidas de texto
 
 test –f /dev/ttyS0	0 se o arquivo existe
 test ! –f /dev/ttyS0	0 se o arquivo não existe
@@ -177,7 +177,7 @@ ctrl+g - Mostra o nome do arquivo, o numero da linha corrente e o total de linha
 Substituição e Deleção
 
 x - Deleta o caractere que esta sob o cursor
-dw -  Deleta palavra, da posição atual do cursor até o final
+dw -  Deleta palavra, da posição atual do cursor até o final ... 2dw  del 2 words
 dd - Deleta linha atual
 D - Linha da posição atual do cursor até o final
 rx - Substitui o caractere sob o cursor ate o final
@@ -188,14 +188,51 @@ J - Une a linha corrente a proxima
 s:/Linux/Unix - substitui a primeira ocorrencia de "Linux" por "Unix"
 s:/Linux/Unix/g - Faz a substituição em todo o arquivo. 
 Tentar :%s/antiga/nova/g
- 
+
+xxxx exclui 4 caracteres um de cada vez
+4u  desfaz as ultimas 4 operacoes
+5X shift + x
+14x
+yw
+Shift + p
+
+Vá para a primeira linha e junte as três linhas:
+1G
+3J
+
+Pesquise e exclua a palavra text(adicione um espaço após a palavra text):
+:%s/text //g
+
+1G	Vá para o início do arquivo ( Shift + G )
+i	Entrar no modo de inserção
+Hello and	Adicione texto ao documento com um espaço após “ and”
+
+ESC escape
+
+l	'L' minúsculo avança um espaço
+~	Shift + ` muda a letra para minúscula
+
+:C
+
+j	Descer para a segunda linha
+10l	10 seguido por 'L' minúsculo
+
+a	Entre no modo de inserção.
+text	texto seguido por um espaço
+Saia do modo de inserção pressionando a tecla Esc .
+
+Abra uma linha em branco abaixo da linha atual digitando uma letra minúscula o:
+
+o
+
+
+Comando	Teclas de função
+:x	Vai salvar e fechar o arquivo.
+:wq	Irá gravar no arquivo e sair.
+:wq!	Gravará em um arquivo somente leitura, se possível, e encerrará.
+ZZ	Vai salvar e fechar. Observe que nenhum ponto- :e- vírgula é usado neste caso.
+:q!	Saia sem salvar as alterações
+:e!	Descartar as alterações e recarregar o arquivo
+:w!	Grave como somente leitura, se possível.
+
 Testar com dois ponto iniciando o comando
-
-
-Mais dicas
-
-Man vi
-
-Ou 
-
-vimtutor
