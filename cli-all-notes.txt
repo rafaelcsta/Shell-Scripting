@@ -42,3 +42,29 @@ ls -lSRht --full-time *
 cp /etc/hosts .
 cp /etc/hosts ~
 
+> file.txt
+mkdir diretorio
+touch file1.txt file2.txt file3.txt
+
+rm -i *.txt (modo interativo)
+
+tar -cf alpha_files.tar alpha *
+tar -czf alpha_files.tar.gz alpha *
+gzip -l alpha_files.tar.gz
+tar -cjf folders.tbz School
+tar -tjf folders.tbz Scholl
+bunzip2 -c folders.tbz | tar -t
+tar -xjf folders.tbz
+tar -xjvf folders.tbz
+
+tar -xjvf folders.tbz School/Art/linux.txt
+
+School/Art/linux.txt
+
+zip alpha_files.zip alpha *
+zip -r School.zip (monta no diretorio School)
+unzip -l (lista)
+unzip School.zip
+unzip School.zip School/Math/numbers.txt
+
+tr 'az' 'A-Z' (converte letras minusculas em maiusculas)
