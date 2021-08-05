@@ -87,4 +87,4 @@ grep -E '[0-9]{3}' /etc/passwd
 
 find /etc -name hosts (estudar o comando find)
 read (recebe entrada do teclado durante em scripts)
-cat, sort, grep, cut, head, tail, uniq, awk e sed sao comandos para filtrar saidas de texto
+cat, echo, sort, grep, cut, head, tail, uniq, awk e sed sao comandos para exibir e ou filtrar saidas de texto
