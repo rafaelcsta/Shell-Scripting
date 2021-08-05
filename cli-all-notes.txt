@@ -23,3 +23,10 @@ export VAR1 (torna variavel fixa durante essa sessao do shell)
 cat env | grep VAR1
 
 unset VAR1 (remove esta variavel)
+
+echo /etc/*.d
+echo /etc/*.???
+echo /etc/???
+echo /bin/?
+
+
