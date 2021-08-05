@@ -29,4 +29,6 @@ echo /etc/*.???
 echo /etc/???
 echo /bin/?
 
+echo /etc/[gu]* (liste todos os arquivos que iniciem com letras 'g' e 'u')
+echo /etc/[!gu]* (liste os dados do diretorio etc exceto os que começarem com 'g' e 'u')
 
