@@ -245,3 +245,30 @@ df
 du
 ls -lSRht --full-time *
 
+cat /proc/cmdline	Informações que foram passadas para o kernel quando ele foi iniciado pela primeira vez, como parâmetros de linha de comando e instruções especiais
+cat /proc/meminfo	Informações sobre o uso de memória pelo kernel
+cat /proc/modules	Uma lista de módulos carregados atualmente no kernel para adicionar funcionalidade extra
+
+cat /proc/sys/net/ipv4/icmp_echo_ignore_all
+
+pstree eh aforma grafica para comandos como ps, top e jobs
+pkill, kill e killall encerram processos 
+
+boot.log	As mensagens geradas como serviços são iniciadas durante a inicialização do sistema.
+cron	Mensagens geradas pelo cronddaemon para tarefas a serem executadas de forma recorrente.
+dmesg	Mensagens geradas pelo kernel durante a inicialização do sistema.
+maillog	Mensagens produzidas pelo maildaemon para mensagens de e-mail enviadas ou recebidas.
+messages	Mensagens do kernel e outros processos que não pertencem a outro lugar. Às vezes nomeado em syslogvez do messagesdaemon que grava este arquivo.
+secure	Mensagens de processos que requerem autorização ou autenticação (como o processo de login).
+journal	Mensagens da configuração padrão do systemd-journald.service; pode ser configurado no /etc/journald.confarquivo entre outros locais.
+Xorg.0.log	Mensagens do servidor X Windows (GUI).
+
+dmesg | grep -i usb (visualizar logs do usb, especificar no fim interface desejada)
+dmesg | grep -i wlan0
+
+sleep 2 && echo "OI"
+
+/etc/sysconfig/network-scripts/ifcfg-eth0
+/etc/sysconfig/networkarquivo
+
+ifconfig, ip, route -n , ip route, netstat -anp, nslookup, host, dig, ss, ping, hping3, whois, curl ifconfig.me, nc, ncat, socket.
