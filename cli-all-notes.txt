@@ -86,3 +86,5 @@ cat /etc/passwd | grep '[0-9]'
 grep -E '[0-9]{3}' /etc/passwd
 
 find /etc -name hosts (estudar o comando find)
+read (recebe entrada do teclado durante em scripts)
+sort, grep, cut, head, tail, uniq, awk e sed sao comandos para filtrar saidas de texto
