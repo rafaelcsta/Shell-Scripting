@@ -237,7 +237,9 @@ ZZ	Vai salvar e fechar. Observe que nenhum ponto- :e- vírgula é usado neste ca
 
 fdisk -l /dev/sda
 lscpu (ver hardware, arch, cpu...)
-lspci (ver perifericos)
+lspci ou -k(ver perifericos)
+lsusb
+lsmod
 free -m (ver memoria)
 df
 du
