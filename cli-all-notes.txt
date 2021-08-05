@@ -18,3 +18,8 @@ VAR1='ls -lh' (criar)
 echo $VAR1 (ver)
 $VAR1 (executar)
 
+export VAR1 (torna variavel fixa durante essa sessao do shell)
+
+cat env | grep VAR1
+
+unset VAR1 (remove esta variavel)
