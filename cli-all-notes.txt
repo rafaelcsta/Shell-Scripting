@@ -341,3 +341,49 @@ chown user /path/to/file
 chown jane:users /tmp/filetest2
 chown .users /tmp/filetest1
 
+u	dono do usuário
+g	dono do grupo
+o	outras
+a	todos (proprietário do usuário, proprietário do grupo e outros)
+
++	adicionar
+-	remover
+=	é igual a
+
+r	ler
+w	Escreva
+x	executar
+
+chmod g + w abc.txt
+chmod ug+x,o-r abc.txt
+chmod u=rx abc.txt
+
+
+4	Ler
+2	Escreva
+1	Executar
+
+7	rwx
+6	rw-
+5	r-x
+4	r--
+3	-wx
+2	-w-
+1	--x
+0	---
+chmod 754 abc.txt
+
+setuid, setgid and the sticky bit
+chmod u+s file
+chmod 4775 file
+chmod u-s file
+chmod 0775 file
+chmod g+s <file|directory>
+chmod 2775 <file|directory>
+chmod g-s <file|directory>
+chmod 0775 <file|directory>
+chmod o+t <directory>
+chmod 1775 <file|directory>
+chmod o-t <directory>
+chmod 0775 <directory>
+
