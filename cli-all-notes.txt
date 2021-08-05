@@ -87,6 +87,19 @@ grep -E '[0-9]{3}' /etc/passwd
 
 find /etc -name hosts (estudar o comando find)
 read (recebe entrada do teclado durante em scripts) 
-Ja "echo $?" retorna 0 se o ultimo comando for executado com sucesso, 1 se ocorrer algum erro de ausencia de args, ou 2 para erros legitimos.
+Ja "echo $?" retorna 0 se o ultimo comando for executado com sucesso, 1 se ocorrer algum erro de ausencia de args, ou 2 para erros legitimos. equivale a &&.
 
 cat, echo, sort, grep, cut, head, tail, uniq, awk e sed sao comandos para exibir e ou filtrar saidas de texto
+
+test –f /dev/ttyS0	0 se o arquivo existe
+test ! –f /dev/ttyS0	0 se o arquivo não existe
+test –d /tmp	0 se o diretório existe
+test –x `which ls`	substitua a localização de lsentão testse o usuário puder executar
+test 1 –eq 1	0 se a comparação numérica for bem-sucedida
+test ! 1 –eq 1	NOT – 0 se a comparação falhar
+test 1 –ne 1	Mais fácil, testpara desigualdade numérica
+test “a” = “a”	0 se a comparação de strings for bem-sucedida
+test “a” != “a”	0 se as cordas são diferentes
+test 1 –eq 1 –o 2 –eq 2	-o é OR: qualquer um pode ser o mesmo
+test 1 –eq 1 –a 2 –eq 2	-a é AND: ambos devem ser iguais
+
