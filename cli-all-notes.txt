@@ -305,6 +305,16 @@ useradd -mk /home/sysadmin/jane
 useradd -s /bin/bash/jane
 useradd -c 'Jane Doe' jane
 
+comandos ls
+
+-	Um arquivo normal , que pode estar vazio ou conter texto ou dados binários.
+d	Um arquivo de diretório , que contém os nomes de outros arquivos e links para eles.
+l	Um link simbólico é um nome de arquivo que se refere (aponta) a outro arquivo.
+b	Um arquivo de bloco é aquele que se relaciona a um dispositivo de hardware de bloco onde os dados são lidos em blocos de dados.
+c	Um arquivo de caractere é aquele que se relaciona a um dispositivo de hardware de caractere onde os dados são lidos um byte de cada vez.
+p	Um arquivo de pipe funciona de forma semelhante ao símbolo de pipe, permitindo que a saída de um processo se comunique com outro processo por meio do arquivo de pipe, onde a saída de um processo é usada como entrada para o outro processo.
+s	Um arquivo de soquete permite que dois processos se comuniquem, onde ambos os processos têm permissão para enviar ou receber dados.
+
 useradd -u 1009 -g users -G sales,research -m -c 'Jane Doe' jane
 grep jane /etc/passwd
 grep jane /etc/gshadow
@@ -312,3 +322,22 @@ ls /var/spool/mail
 ls /home
 chage -M 60 jane
 grep jane /etc/shadow | cut -d: -f1,5
+usermod -aG development jane
+userdel jane
+userdel -r jane
+
+useradd -G research -c 'Linux Student' -m student
+grep student /etc/passwd
+grep student /etc/group
+usermod -aG search sysadmin
+usermod -L jane (impede login)
+newgrp group_name
+usermod -g groupname username
+chgrp group_name file
+chgrp development /etc/passwd
+chgrp -R development test_dir
+stat /tmp/filetest1
+chown user /path/to/file
+chown jane:users /tmp/filetest2
+chown .users /tmp/filetest1
+
