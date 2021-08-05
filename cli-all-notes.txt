@@ -32,3 +32,12 @@ echo /bin/?
 echo /etc/[gu]* (liste todos os arquivos que iniciem com letras 'g' e 'u')
 echo /etc/[!gu]* (liste os dados do diretorio etc exceto os que começarem com 'g' e 'u')
 
+echo /etc/*[0-9]* liste os que tenham ao menos um número
+echo /etc/x*
+ls -d /etc/x* (lista todos os arquivos e diretórios que começam com x de /etc/ e de subdiretórios)
+ls -r *
+
+ls -lSRht --full-time *
+
+
+
