@@ -5,5 +5,16 @@ expr 2 '*' 3
 
 for a in {1..9};do for b in {1..9};do for c in $(expr $a '*' $b);do echo "$a por $b = $c";done;done;done
 
-
 for i in $(ls /);do echo $i;done
+
+!ls
+\ls
+
+echo /etc/r*.conf
+
+variaveis
+
+VAR1='ls -lh' (criar)
+echo $VAR1 (ver)
+$VAR1 (executar)
+
