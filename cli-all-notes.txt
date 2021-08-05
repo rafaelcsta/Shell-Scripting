@@ -39,5 +39,6 @@ ls -r *
 
 ls -lSRht --full-time *
 
-
+cp /etc/hosts .
+cp /etc/hosts ~
 
