@@ -1,0 +1,16 @@
+Sempre em qualquer linguagem, quando se
+vai criar um programa, voce deve antes
+formular a logica de seu funcionamento.
+
+Entao voce vai criar um portscan
+Antes voce tem que saber quais programas
+do sistema sao capazes de fazer as consultas
+que voce precisa, e considerar
+todas as possiveis respostas.
+
+tendo isso claro em mente done!
+
+EH ESSENCIAL TESTAR OS COMANDOS QUE SERAO
+USADOS. Na maioria das vezes serah necessario
+tratar a saida com filtros com gre ou cut.
+

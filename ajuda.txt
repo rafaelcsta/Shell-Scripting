@@ -1,0 +1,140 @@
+Dicas: Observar suas estruturas de condicoes e decisoes
+Observar se ferramenta usada na ferramenta esta instalada
+Observar se o comando esta dando a saida perfeita para se encaixar no script
+Sempre testar o comando puro no terminal antes de jogar ele no script
+Formular bem a logica do que voce precisa fazer, isso precisa estar claro em sua mente
+para que voce possa escrever precisamente levando em conta cada detalhe
+
+
+Aqui voce deve listar a funcao de cada script desta pasta
+para facilitar e agilizar a identificacao quando precisar usar:
+
+0- scripts com nomes df como argumentos e condicoes, sao da fase de aprendizado
+
+PASTA BASH:
+
+0- criascript.sh Utilitario para criar ou montar scripts rapidamente reutilizando um código
+1- bruterdp.sh Brute force em rdp(Windows remote desktop) 
+2- dnsall.sh Bruteforce de dominios e/em registros e/tambem de subdominios
+3- dnsrev.sh nesse caso vc vai usar o um range de ips pra descobrir dominios seria o caminho oposto
+4- dnsrecon.sh faz o reconhecimento do dominio rodando um brute-force de subdominios
+5- dnsverifyregs.sh Verifica registros records do dominio 
+6- dnszonetransfer.sh Transferencia de zona
+7- fastsearch.sh Econtrar arquivos de determinada extencao no site do alvo
+8- ghdb.sh leaks e infos sensiveis trello,pastbin e arquivos no site
+9- parsing.sh para parsing html, se for usar em outra tecnologia aconselho fazer uma copia personalizada
+10- pentsuggests.sh Para auxilia-lo a conduzir seus testes sem esquecer tecnicas
+11- pingsweep.sh funcional usa icmp
+12- portscan.sh funcional usa em casos em que nao se tem um bom portscan
+13- scripts e nomes diferentes usei pouco ateh entao, eh bom consultar para automatizacao
+14- subdomaintakeover.sh Acha alias para validar essa vuln
+15- webrecon.sh reconhecimento web, busca por diretorio ou arquivo na raiz do site, melhora-lo
+16- metafind.sh acha arquivo de extencao especificada no site alvo, baixa e passa o exiftool nele
+
+PASTA CRACKPASS/HASHS:
+
+17- b64encrypt.sh Codifica em base64
+18- b64decrypt.sh Decodifica de base64
+19- genhash.sh Gera um hash apartir da entrada de uma senha seguida de tipo do algoritmo desejado e nome do arquivo de saida.
+20- genhash2.sh Gera hashs apartir de uma wordlist (cria uma rainbowtable)
+21- thesalt.sh Salts no padrao linux
+22- simplegenhash.py Gera uma hash em python, a seu gosto de maneira simples
+
+
+CPENTEST/
+
+23- Ferramentas de testes em C (dns resolver, loncrack, programacao insegura, sockets)
+24- DOS
+25- Estudos estouro de buffer
+
+
+PYTHON/
+
+26- Fuzzing
+27- Interacao com servicos
+28- sshbruteforce
+29- ftpbruteforce
+30- conceitos de web requestes com python
+31- Ferramentas de web
+32- sockets, comandos do os 
+32- smpt
+33- banner grabing
+34- consulta
+35- portscan
+36- resolver
+39- curso solyd
+40- fuzzing windows
+
+METADATAS/ & BASH/META/
+
+41- metafind.sh (LIN)
+42- FOCA (WIN)
+
+ASSEMBLY/ ASSEMBLYW/
+
+43- Buffer OverFlow (win e lin)
+44- hexadecimal, little-endian 
+45- construcao de payload
+
+SQL/
+
+46- SQLINJECTION LINHAS
+
+POWERSHELL
+
+47- Comandos pra se virar no Powershell
+
+Bypass IPS/IDS/WAF
+...
+BOTNET
+OSINT
+SIGINT
+ENSOCIAL
+LEAKS
+
+---------------------------------------------------------
+
+criascript.sh
+
+Hoje escrevi um script que me auxilia durante a criacao de outros
+scripts esse é certamente um dos mais importantes que ja criei
+pois vai me economizar muito tempo se eu usa-lo corretamente
+
+A solução é pôr o código em um arquivo na mesma pasta do criascript.sh
+e ir editando o codigo por fora, então quando ele estiver funcionando
+ai sim finalizamos inserindo dentro do cria.
+-------------------------------------------------------------
+
+TODOS OS SCRIPTS EM /home/test/Desktop/BASH/CRIA/OUT/
+estao prontos para gravar videos e serem upados para o github.
+
+-------------------------------------------------------------
+
+Programas em C e em PYTHON devem ser editados de uma outra forma
+Talvez seja a hora de criar um script que auxilie tambem outras
+linguagens...
+Talvez uma versao 2.0 do criascript que sugira opcoes de linguagens
+a criar script, com modelos padronizados com estruturas de condicoes
+e decisoes.
+
+#voce pode inserir o link do seu repositorio do Git
+#Gravar videos dos scripts prontos com OBS
+#Fazer versao criascript de PYTHON e C e edita-los
+#Subir pro git, gravar vidoes dos scripts de PYTHON e C
+...
+
+visao:
+
+if [ "$1" == "" ]
+then
+echo "             Modo de uso: $0 Linguagem NewPrograma.ext"
+elif [ "$1" == "bash" ]
+then
+/home/test/Desktop/BASH/CRIA/OUT/criascript.sh $2
+elif [ "$1" == "c" ]
+then
+/home/test/Desktop/CPENTEST/criascript.sh $2
+elif
+...
+else
+fi
